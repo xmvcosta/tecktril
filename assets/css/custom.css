@@ -1,0 +1,17 @@
+/*RESET*/
+* {margin: 0;padding: 0;box-sizing: border-box;}
+
+/*CUSTOMIZAÇÃO*/
+body {background: #2d3d8e;font-family: Verdana, Geneva, Tahoma, sans-serif;}
+
+header{
+    background-color: green;
+}
+
+main{
+    background-color: red;
+}
+
+footer{
+    background-color: yellow;
+}
