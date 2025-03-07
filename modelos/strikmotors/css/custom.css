@@ -1,0 +1,215 @@
+/*RESET*/
+* {margin: 0;padding: 0;box-sizing: border-box;}
+
+/*CLASSES AUXILIARES*/
+.container{margin:0 auto;max-width: 1280px;width: 95%;}
+.section{margin-top:0.5rem;padding-bottom: 1rem; background: #e1e1e1;}
+.section h1{border-bottom:3px dotted #3b5998;display: inline-block;;padding: 0.5rem;color:#FFFFFF;background: #3b5998;}
+.section p{text-align:justify;text-indent: 2rem;}
+.wrapper{display:flex;flex-wrap: wrap;justify-content: center; background: green;}
+.fixed{position:fixed;bottom:0;right:0;width:58%;border: 2px solid #fff;background: green;color:#FFFFFF;font-size: 1.4rem;padding: 0.3rem;}
+.chk{color:green !important;text-shadow: 2px 2px 2px #fff;}
+
+/*REDESSOCIAIS*/
+.redessociais-container{display: flex;justify-content: center;}
+.fa-facebook {color: #3b5998;background-color: #fff;}
+.fa-instagram {color:#fff;background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);}
+.fa-twitter {color:#1da1f2;}
+.fa-youtube {color:#FF0000;background-color: #fff;}
+
+/*CUSTOMIZAÇÃO*/
+body {background: #34495e;font-family: Verdana, Geneva, Tahoma, sans-serif;}
+img{max-width: 100%;display: block;margin: auto;}
+
+/*TOPOSITE*/
+#toposite{position: sticky;top: 0;background-color: #4b4b4b;}
+#topositeint{display: flex;justify-content: space-between;align-items: center;}
+
+/*LOGO*/
+.logo_text{display:none;}
+
+/*NAV*/
+.menu {display:flex;align-items:center;}
+nav ul,nav li {list-style: none;margin:0;padding:0;}
+nav ul{display:flex;}
+nav a{display:block;padding:15px;text-decoration:none;text-transform:uppercase;color:#fff;}
+nav .active a,nav a:hover{background-color:#39aae1;color:#FFFFFF;}
+.menuMobile{display:none;width:60px;height:60px;color: #fff;border: 1px solid #fff;border-radius: 10px;justify-content: center;}
+.menuMobile-container{display: flex;flex-direction: column;align-items: center;}
+.mm_line{height:3px;background-color:#fff;width: 80%;margin: 2px;}
+
+/*SHOWCASE*/
+.showcasebox{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #000;
+    box-shadow: 2px 2px 5px #333;
+    margin-bottom: 0.5rem;
+    transition: 0.5s transform;
+    flex:1;
+    margin: 0.3rem;
+}
+.showcasebox:hover{
+    transform: scale(1.1);
+    transition: 0.5s transform;
+}
+.showcasebox img{
+    border: 1px solid blue;
+}
+
+.showcasebox h2{
+    text-align: center;
+    background: #333;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 3px #000;
+    padding: 0.5em;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+
+.showcaseboxint{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: yellow;
+    font-weight: bold;
+    color:#000;
+}
+
+.showcasebox ul{
+    list-style: none;
+    background: #FF0000;
+}
+.showcaseboxint i{
+    color: blue;
+    font-size: 2rem;
+    margin:0 1rem;
+    text-align: center;
+}
+
+.showcaseboxint ul{
+    margin: 1rem;
+}
+.showcaseboxint li{
+    margin: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+.showcasebox a{
+    text-decoration: none;
+    background-color: blue;
+    padding: 1rem;
+    border-radius: 0.5em;
+    color: #fff;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    font-weight: bold;
+}
+
+/*QUEM SOMOS*/
+.quemsomos{
+    background-image: url("../img/quemsomos.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height:300px;
+    color: #fff;
+    
+}
+.quemsomos i{
+    font-size: 2rem;
+    margin:1rem; 
+}
+
+/*RODAPESITE*/
+#rodapesite{
+    background-color:#1e1e1e;
+    color: #fff;
+    text-shadow: 2px 2px #000;
+    text-align: center;
+    font-size: 1rem;
+    padding: 5px;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+    
+}
+    #rodapesite a{
+        text-decoration: none;
+        color: #fff;
+        text-shadow: 2px 2px #000;
+        padding: 5px;
+    }
+
+    #rodapesite h1{
+        border-bottom: 3px dashed #3b5998;
+        font-size: 1.5rem;
+    }
+    .rodapeendereco,.rodapecontato,.rodapeatendimento{
+        padding: 5px;
+        margin-bottom: 0.5rem;
+        flex:1;
+    }
+    #copyright{
+    border-top: 1px solid #ccc;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    }
+
+/*MEDIAS*/
+/*MEDIA MOBILE*/
+@media only screen and (max-width: 600px) {
+    nav ul {
+		flex-direction: column;
+		display:none;
+		position: absolute;
+	    left: 0;
+	    width: 100%;
+	    background-color: #2b4c99;
+	}
+
+	header {
+		height:auto;
+	}
+
+	.menuMobile {
+		display:flex !important;
+		flex-direction: column;
+		justify-content:space-around;
+	}
+}
+
+/*MEDIA TABLETS*/
+@media only screen and (min-width: 601px) {
+    .container {
+        width: 90%;
+    }
+    
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+   
+    #rodapeitens{
+        display: flex;
+    }
+    nav ul {
+        display: flex !important;
+    }
+    
+}
+/*MEDIA HD*/
+@media only screen and (min-width: 993px) {
+    .container {
+        width: 80%;
+    }
+    
+}

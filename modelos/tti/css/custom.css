@@ -1,0 +1,199 @@
+/*RESET*/
+* {margin: 0;padding: 0;box-sizing: border-box;}
+
+/*CLASSES AUXILIARES*/
+.container{margin:0 auto;max-width: 1280px;width: 95%;}
+.section{margin-top:0.5rem;padding-bottom: 1rem; background: #D0E4F5;}
+.section h1{display: inline-block;padding: 0.5rem;color:#2d3d8e;background: yellow;border:1px solid red;}
+.section p{text-align:justify;text-indent: 2rem;}
+.wrapper{display:flex;flex-wrap: wrap;justify-content: center;}
+.voltaMenu{position: fixed;bottom:5px;left:5px;background: blue; padding:8px;border:1px solid yellow;}
+.voltaMenu a{text-decoration: none;color:#fff;cursor:pointer;}
+
+/*REDESSOCIAIS*/
+.redessociais-container{display: flex;justify-content: center;background-color: #D0E4F5}
+.fa-facebook {color: #3b5998;}
+.fa-instagram {color:#c32aa3;}
+.fa-twitter {color:#1da1f2;}
+.fa-youtube {color:#FF0000;}
+
+/*CUSTOMIZAÇÃO*/
+body {background: #2d3d8e;font-family: Verdana, Geneva, Tahoma, sans-serif;}
+img{max-width: 100%;display: block;margin: auto;}
+
+/*TOPOSITE*/
+#toposite{background-color: #2d3d8e;}
+#topositeint{display: flex;justify-content: space-between;align-items: center;}
+
+/*BANNER*/
+#banner{margin-top:0.5rem;}
+#banner img{width: 100%;}
+
+/*LOGO*/
+.logo_text{display:none;}
+
+/*NAV*/
+.menu {display:flex;align-items:center;}
+nav ul,nav li {list-style: none;margin:0;padding:0;}
+nav ul{display:flex;}
+nav a{display:block;padding:15px;text-decoration:none;text-transform:uppercase;color:#2d3d8e;font-weight: bold;color:#fff;}
+nav .active a,nav a:hover{background-color:yellow;color:#2d3d8e;}
+.menuMobile{display:none;width:60px;height:60px;color: #fff;justify-content: center;}
+.menuMobile-container{display: flex;flex-direction: column;align-items: center;}
+.mm_line{height:3px;background-color:yellow;width: 80%;margin: 2px;}
+
+/*SHOWCASE*/
+.showcasebox{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #000;
+    box-shadow: 2px 2px 5px #333;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    width: 300px;
+    margin: 0.3rem;
+}   
+.showcaseboxdesc{
+    color:#fff;
+    background-color: #2b4c99;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-shadow: 1px 1px 1px #000;
+}
+.showcaseboxdesc div{
+    padding: 3px;
+}
+
+/*QUEM SOMOS*/
+.quemsomos{
+    padding:0.5rem;
+    color: #333;
+    line-height: 1.6;;
+}
+.quemsomos h2, .quemsomos h3 {
+    margin-top:0.5rem;
+    text-align: center;
+}
+.quemsomos i{
+    font-size: 2rem;
+    margin:1rem; 
+}
+
+.galeriaimagens{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.galeriaimagens img{
+    width: 300px;
+    margin: 5px;
+    border-radius: 10px;
+    transition: 0.5s transform;
+}
+
+.galeriaimagens img:hover{
+    transform: scale(1.1);
+    transition: 0.5s transform;
+}
+
+/*CONTATO*/
+.contato{width: 100%;max-width: 500px;padding: 5px;}
+.form{display: flex;flex-direction: column;}
+.field{padding: 10px;margin-bottom: 15px; border: 1px solid #333; border-radius: 5px;}
+textarea{height: 150px;}
+#contato{display: flex;justify-content: center;}
+
+/*RODAPESITE*/
+#rodapesite{
+    background-color:#1e1e1e;
+    color: #fff;
+    text-shadow: 2px 2px #000;
+    text-align: center;
+    font-size: 1rem;
+    padding: 5px;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+    
+}
+    #rodapesite a{
+        text-decoration: none;
+        color: #fff;
+        text-shadow: 2px 2px #000;
+        padding: 5px;
+    }
+
+    #rodapesite h1{
+        border-bottom: 3px dashed #3b5998;
+        font-size: 1.5rem;
+    }
+    .rodapeendereco,.rodapecontato,.rodapeatendimento{
+        padding: 5px;
+        margin-bottom: 0.5rem;
+        flex:1;
+    }
+    #copyright{
+    border-top: 1px solid #ccc;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    }
+
+
+/*MEDIAS*/
+/*MEDIA MOBILE*/
+@media only screen and (max-width: 600px) {
+    nav ul {
+		flex-direction: column;
+		display:none;
+		position: absolute;
+	    left: 0;
+        width: 100%;
+        background-color: #2b4c99;
+	}
+
+	header {
+		height:auto;
+	}
+
+	.menuMobile {
+		display:flex !important;
+		flex-direction: column;
+		justify-content:space-around;
+	}
+}
+
+/*MEDIA TABLETS*/
+@media only screen and (min-width: 601px) {
+    .container {
+        width: 90%;
+    }
+    
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+   
+    #rodapeitens{
+        display: flex;
+    }
+    nav ul {
+        display: flex !important;
+    }
+    
+}
+/*MEDIA HD*/
+@media only screen and (min-width: 993px) {
+    .container {
+        width: 80%;
+    }
+    
+}

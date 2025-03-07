@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <title>Cadastro de Clientes</title>
+</head>
+
+<body>
+    <header id="toposite">
+        <div id="topositeint" class="container">
+            <div id="logo" class="wow slideInLeft" data-wow-duration="2s">
+                <h1 class="logo_text">Nosso Projeto</h1>
+                <a href="#"><img class="logo_img" src="img/logo.jpg" alt="Logo Mega Economia"></a>
+            </div>
+            <div class="menu">
+                <nav class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">
+                    <div class="menuMobile">
+                        <div class="menuMobile-container">
+                            <div>menu</div>
+                            <div class="mm_line"></div>
+                            <div class="mm_line"></div>
+                            <div class="mm_line"></div>
+                        </div>
+                    </div>
+                    <ul>
+                        <li class="active"><a href="#toposite">Home</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                        <li><a href="#principal">Quem Somos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <main id="corposite">
+        <section id="contato" class="section container wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.7s">
+            <div class="contato">
+                <h1>Cadastro</h1>
+                <form class="form" action="#">
+                    <input class="field" type="text" name="nome" placeholder="Digite seu nome">
+                    <input class="field" type="email" name="email" placeholder="Digite seu email">
+                    <textarea class="field" name="mensagem" placeholder="Digite sua mensagem."></textarea>
+                    <input class="field" type="submit" value="Enviar">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--RODAPESITE-->
+    <footer id="rodapesite">
+        <div class="container">
+            <div id="rodapeitens">
+                <div class="rodapeatendimento wow flipInX" data-wow-duration="1s" data-wow-delay="0.3s">
+                    <h1>Horário de funcionamento</h1>
+                    <p>Segunda à Sábado - 07:00h às 20:00h</p>
+                    <p>Domingo e Feriado - 08:00h às 14:00h</p>
+                </div>
+                <div class="rodapeendereco wow flipInX" data-wow-duration="1s" data-wow-delay="0.6s">
+                    <h1>Lojas</h1>
+                    <p>Avenida Zelina, 1253 - Vila Zelina - </br>São Paulo - SP</p>
+                </div>
+                <div class="rodapecontato wow flipInX" data-wow-duration="1s" data-wow-delay="0.9s">
+                    <h1>Contato</h1>
+                    <p>Telefone 11 2341-9299</p>
+                    <p>Telefone 11 11 99217-8972</p>
+                    <a href="contato@ttitrevisan.com.br">contato@ttitrevisan.com.br</a>
+                </div>
+            </div>
+            <div id="copyright">
+                Copyright © 2024 Trevisan Tecnologia Informática.
+            </div>
+        </div>
+    </footer>
+    <div class="voltaMenu">
+        <a href="#toposite">Menu</a>
+    </div>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="js/jscustom.js"></script>
+</body>
+
+</html>
