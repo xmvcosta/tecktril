@@ -5,13 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/custom.css">
-    <title>Document</title>
+    <title>Teck Tril</title>
 </head>
 <body>
     <header>
-        Tecktril header
+        <h1> Tecktril header</h1>
         <nav>menu</nav>
     </header>
+    <section id="banner" class="section">
+        <article class="container wow rollIn" data-wow-duration="1s" data-wow-delay="0.5s">
+            <h1>BANNER</h1>
+            <p>DESTAQUES DO MES</p>
+        </article>
+    </section>
     <main>Tecktril Main</main>
     <footer id="rodapesite">
         <div class="container">
@@ -37,5 +43,11 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/jscustom.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 </html>

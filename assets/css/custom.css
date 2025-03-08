@@ -15,3 +15,47 @@ main{
 footer{
     background-color: yellow;
 }
+
+img{max-width: 100%;display: block;margin: auto;}
+
+/*CLASSES AUXILIARES*/
+.container{margin:0 auto;max-width: 1280px;width: 95%;}
+
+/*RODAPESITE*/
+#rodapesite{
+    background-color:#1e1e1e;
+    color: #fff;
+    text-shadow: 2px 2px #000;
+    text-align: center;
+    font-size: 1rem;
+    padding: 5px;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+    
+}
+    #rodapesite a{
+        text-decoration: none;
+        color: #fff;
+        text-shadow: 2px 2px #000;
+        padding: 5px;
+    }
+
+    #rodapesite h1{
+        border-bottom: 3px dashed #3b5998;
+        font-size: 1.5rem;
+    }
+    .rodapeendereco,.rodapecontato,.rodapeatendimento{
+        padding: 5px;
+        margin-bottom: 0.5rem;
+        flex:1;
+    }
+    #copyright{
+    border-top: 1px solid #ccc;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    }
