@@ -82,6 +82,102 @@ header {
 .btn:hover {
     opacity: 0.9;
 }
+
+/* MAIN */
+
+main h1{
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* Accordin */
+
+#container-accordion {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+  width: 90%;
+  margin: 0 auto;
+  margin-block: 15px;
+}
+
+.accordion {
+  background-color: #121212;
+
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  color: white;
+}
+
+.accordion-header {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px;
+  color: white;
+}
+
+.accordion-header span {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  flex-grow: 1;
+}
+
+.accordion-body {
+  color: #444;
+  font-size: 14px;
+  opacity: 0;
+  height: 0;
+  pointer-events: none;
+  overflow: hidden;
+  transition: height 0.3s ease, opacity 0.3s ease;
+}
+
+.accordion-body.active {
+  height: auto;
+  opacity: 1;
+  padding-block: 10px;
+  pointer-events: all;
+}
+
+.accordion-body img {
+  width: 100%;
+}
+
+.accordion-body p {
+  padding-block: 10px;
+  color: white;
+}
+
+.accordion-body a{
+  color: rgb(105, 245, 255);
+
+}
+
+/* Animação para girar a seta ao abrir */
+.accordion-header i {
+  transition: transform 0.3s ease;
+}
+
+.accordion-header i.rotated {
+  transform: rotate(180deg);
+}
+
+
+
+
+
   /* HAMBURGER */
 
   .nav {
@@ -146,10 +242,9 @@ header {
       left: 0;
       width: 100vw;
       height: 100vh;
-      background: #a5c;
+      background: rgb(70, 107, 255);
       clip-path: circle(100px at 90% -15%);
       transition: 1s ease-out;
-  
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
@@ -158,11 +253,17 @@ header {
       pointer-events: none;
     }
   
+    .nav-list li {
+      background-color: rgb(181, 244, 255);
+      width: 100%;
+      text-align: center;
+    }
     .nav-list a {
       font-size: 24px;
       opacity: 0;
     }
   
+
     .nav-list li:nth-child(1) a {
       transition: 0.5s 0.2s;
     }
