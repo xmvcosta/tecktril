@@ -1,7 +1,6 @@
 :root{
     --color-white: #fff;
     --color-black: #000;
-    
 }
 
 /* HEADER */
@@ -174,10 +173,6 @@ main h1{
   transform: rotate(180deg);
 }
 
-
-
-
-
   /* HAMBURGER */
 
   .nav {
@@ -188,8 +183,6 @@ main h1{
     justify-content: space-between;
     align-items: center;
   }
-  
- 
   
   .nav-list {
     display: flex;
