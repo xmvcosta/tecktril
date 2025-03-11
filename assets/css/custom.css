@@ -30,8 +30,9 @@ img{max-width: 100%;display: block;margin: auto;}
     /* Banner */
     
     .banner{
-        background: url(img/banner.jpg) no-repeat center center/cover;
-        padding-block: 2rem;
+        background: url(../img/banner.jpg) no-repeat center center/cover;
+        padding: 2rem;
+        text-align: center;
     }
     
     .banner h2{
