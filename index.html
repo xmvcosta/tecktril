@@ -5,15 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Teck Tril</title>
 
-  
-
     <!-- ICONS -->
-
-    <!-- seta Accordion -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
@@ -24,16 +19,15 @@
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/responsivo.css" />
     <link rel="stylesheet" href="assets/css/custom.css" />
-
-    
   </head>
   <body>
     <header>
+      
       <nav class="nav">
-        <a href="/" class="logo"
-          ><img src="assets/img/logo.jpg" alt="Logo Teck Tril"
-        /></a>
-        <button class="hamburger"></button>
+        <a href="/" class="logo">
+          <img src="assets/img/logo.jpg" alt="Logo Teck Tril" />
+        </a>
+
         <ul class="nav-list">
           <li><a href="#">Home</a></li>
           <li><a href="#">Empresa</a></li>
@@ -41,12 +35,17 @@
           <li><a href="#">Contato</a></li>
         </ul>
       </nav>
+      <button class="hamburger">
+        <i class="fas fa-bars"></i> <!-- Ícone inicial do menu -->
+      </button>
+      
     </header>
 
     <main>
-      <!-- Conteudo Banner -->
+      <!-- Banner -->
+       
       <div class="banner">
-        <section class="section">
+        <section class="container-section">
           <article
             class="container wow rollIn"
             data-wow-duration="1s"
@@ -69,130 +68,257 @@
         </section>
       </div>
 
-      <!-- PRODUTOS -->
-      <h1>Produtos</h1>
-
-      <div id="container-accordion">
-        <!-- Accordion 1 -->
-        <div class="accordion">
-          <button class="accordion-header">
-            <span> Extrusoras </span>
-            <i class="fa-solid fa-chevron-down"></i>
-          </button>
-          <div class="accordion-body">
+      <!-- Produtos -->
+      <section>
+        <h1>Produtos</h1>
+        <div id="container-produtos">
+          <!-- Produto 1 -->
+          <article class="produto-item">
             <img
-              src="extrusora.png"
+              src="http://www.tecktril.com.br/produtos/prod4.png"
               alt="Imagem de uma extrusora"
-              class="accordion-image"
+              class="produto-image"
             />
-            <p>
-              Uma extrusora é uma máquina utilizada para moldar materiais
-              através do processo de extrusão...
-            </p>
-            <a href="#">Saiba Mais</a>
-          </div>
-        </div>
+            <div class="produto-content">
+              <h3>Extrusoras</h3>
+              <p>
+                Uma extrusora é uma máquina utilizada para moldar materiais
+                através do processo de extrusão...
+              </p>
+              <a href="#" class="produto-link">Saiba Mais</a>
+              <a href="#" class="produto-btn">FALE AGORA!</a>
+            </div>
+          </article>
 
-        <!-- Accordion 2 -->
-        <div class="accordion">
-          <button class="accordion-header">
-            <span> Extrusão de Perfis Rígidos </span>
-            <i class="fa-solid fa-chevron-down"></i>
-          </button>
-          <div class="accordion-body">
+          <!-- Produto 2 -->
+          <article class="produto-item">
             <img
-              src="extrusao-perfil-rigido.png"
+              src="http://www.tecktril.com.br/produtos/prod12.png"
               alt="Imagem de extrusão de perfis rígidos"
-              class="accordion-image"
+              class="produto-image"
             />
-            <p>
-              A extrusão de perfis rígidos é um processo industrial utilizado
-              para criar formas sólidas e rígidas...
-            </p>
-            <a href="#">Saiba Mais</a>
-          </div>
-        </div>
+            <div class="produto-content">
+              <h3>Extrusão de Perfis Rígidos</h3>
+              <p>
+                A extrusão de perfis rígidos é um processo industrial utilizado
+                para criar formas sólidas e rígidas...
+              </p>
+              <a href="#" class="produto-link">Saiba Mais</a>
+              <a href="#" class="produto-btn">FALE AGORA!</a>
+            </div>
+          </article>
 
-        <!-- Accordion 3 -->
-        <div class="accordion">
-          <button class="accordion-header">
-            <span> Extrusão de Laminados </span>
-            <i class="fa-solid fa-chevron-down"></i>
-          </button>
-          <div class="accordion-body">
+          <!-- Produto 3 -->
+          <article class="produto-item">
             <img
-              src="extrusao-laminados.png"
+              src="http://www.tecktril.com.br/produtos/prod5.png"
               alt="Imagem de extrusão de laminados"
-              class="accordion-image"
+              class="produto-image"
             />
-            <p>
-              As linhas de extrusão de laminados atendem a extrusão e
-              co-extrusão de plásticos...
-            </p>
-            <a href="#">Saiba Mais</a>
-          </div>
-        </div>
+            <div class="produto-content">
+              <h3>Extrusão de Laminados</h3>
+              <p>
+                As linhas de extrusão de laminados atendem a extrusão e
+                co-extrusão de plásticos...
+              </p>
+              <a href="#" class="produto-link">Saiba Mais</a>
+              <a href="#" class="produto-btn">FALE AGORA!</a>
+            </div>
+          </article>
 
-        <!-- Accordion 4 -->
-        <div class="accordion">
-          <button class="accordion-header">
-            <span> Extrusão de Tinta em Pó </span>
-            <i class="fa-solid fa-chevron-down"></i>
-          </button>
-          <div class="accordion-body">
+          <!-- Produto 4 -->
+          <article class="produto-item">
             <img
-              src="extrusao-tinta.png"
+              src="http://www.tecktril.com.br/produtos/prod8.png"
               alt="Imagem de extrusão de tinta em pó"
-              class="accordion-image"
+              class="produto-image"
             />
-            <p>
-              As extrusoras de tinta em pó atendem a processos industriais para
-              diferentes aplicações...
-            </p>
-            <a href="#">Saiba Mais</a>
-          </div>
-        </div>
+            <div class="produto-content">
+              <h3>Extrusão de Tinta em Pó</h3>
+              <p>
+                As extrusoras de tinta em pó atendem a processos industriais
+                para diferentes aplicações...
+              </p>
+              <a href="#" class="produto-link">Saiba Mais</a>
+              <a href="#" class="produto-btn">FALE AGORA!</a>
+            </div>
+          </article>
 
-        <!-- Accordion 5 -->
-        <div class="accordion">
-          <button class="accordion-header">
-            <span> Extrusão para Granulação </span>
-            <i class="fa-solid fa-chevron-down"></i>
-          </button>
-          <div class="accordion-body">
+          <!-- Produto 5 -->
+          <article class="produto-item">
             <img
-              src="extrusao-granulacao.png"
+              src="http://www.tecktril.com.br/produtos/prod6.png"
               alt="Imagem de extrusão para granulação"
-              class="accordion-image"
+              class="produto-image"
             />
-            <p>
-              O processo de extrusão para granulação transforma materiais
-              plásticos em pellets...
-            </p>
-            <a href="#">Saiba Mais</a>
-          </div>
-        </div>
+            <div class="produto-content">
+              <h3>Extrusão para Granulação</h3>
+              <p>
+                O processo de extrusão para granulação transforma materiais
+                plásticos em pellets...
+              </p>
+              <a href="#" class="produto-link">Saiba Mais</a>
+              <a href="#" class="produto-btn">FALE AGORA!</a>
+            </div>
+          </article>
 
-        <!-- Accordion 6 -->
-        <div class="accordion">
-          <button class="accordion-header">
-            <span> Extrusão para Laboratório </span>
-            <i class="fa-solid fa-chevron-down"></i>
-          </button>
-          <div class="accordion-body">
+          <!-- Produto 6 -->
+          <article class="produto-item">
             <img
-              src="extrusao-laboratorio.png"
+              src="http://www.tecktril.com.br/produtos/prod9.png"
               alt="Imagem de extrusão para laboratório"
-              class="accordion-image"
+              class="produto-image"
             />
-            <p>
-              As linhas de extrusão para laboratório são projetadas para testes
-              e desenvolvimento...
-            </p>
-            <a href="#">Saiba Mais</a>
-          </div>
+            <div class="produto-content">
+              <h3>Extrusão para Laboratório</h3>
+              <p>
+                As linhas de extrusão para laboratório são projetadas para
+                testes e desenvolvimento...
+              </p>
+              <a href="#" class="produto-link">Saiba Mais</a>
+              <a href="#" class="produto-btn">FALE AGORA!</a>
+            </div>
+          </article>
         </div>
-      </div>
+      </section>
+
+      <!-- Extrusoras & Aplicações -->
+      <section>
+        <h2>EXTRUSORAS & APLICAÇÕES</h2>
+
+        <!-- Higiene -->
+        <article>
+          <i class="fa-solid fa-soap" aria-hidden="true"></i>
+          <h3>Soluções de Higiene</h3>
+          <p>
+            A Rulli Standard cria extrusoras para a produção de materiais para
+            aplicações que melhoram o bem-estar e qualidade de vida.
+          </p>
+        </article>
+
+        <!-- Embalagens -->
+        <article>
+          <i class="fa-solid fa-shopping-bag" aria-hidden="true"></i>
+          <h3>Soluções de para Embalagens</h3>
+          <p>
+            As embalagens plásticas são uma das principais maiores produções a
+            partir das Extrusoras Flexíveis Rulli Standard. Confira nossa linha!
+          </p>
+        </article>
+
+        <!-- Tecnologia -->
+        <article>
+          <i class="fa-solid fa-industry" aria-hidden="true"></i>
+          <h3>Indústria e Tecnologia</h3>
+          <p>
+            Extrusoras, Coextrusoras, Monocamadas e Projetos Customizados para a
+            produções industriais de grande escala.
+          </p>
+        </article>
+
+        <!-- Alimento -->
+        <article>
+          <i class="fa-solid fa-wine-bottle" aria-hidden="true"></i>
+          <h3>Embalagem de Alimentos</h3>
+          <p>
+            Assim como as embalagens plásticas as próprias para alimentos também
+            são produzidas a partir de nossas Extrusoras Flexíveis.
+          </p>
+        </article>
+
+        <!-- Farmacêutica -->
+        <article>
+          <i class="fa-solid fa-capsules" aria-hidden="true"></i>
+          <h3>Soluções Farmacêuticas</h3>
+          <p>
+            A Rulli Standard também está no mercado da saúde. Fale com um
+            vendedor e conheça as extrusoras ideais para a produção
+            farmacêutica.
+          </p>
+        </article>
+
+        <!-- Agricultura -->
+        <article>
+          <i class="fa-solid fa-seedling" aria-hidden="true"></i>
+          <h3>Soluções para Agricultura</h3>
+          <p>
+            A Rulli Standard não poderia estar de fora do maior mercado
+            brasileiro, nosso maquinário está presente nas principais empresas
+            agro.
+          </p>
+        </article>
+      </section>
+
+      <!-- Últimas Notícias -->
+      <section>
+        <h2>ÚLTIMAS NOTÍCIAS</h2>
+        <a href="#"
+          ><i class="fa-solid fa-link" aria-hidden="true"></i> Veja mais
+          artigos</a
+        >
+        <article>
+          <img
+            src="https://rullistandard.com.br/wp-content/uploads/2022/09/Maquina-Coextrusora-Full-Rulli-Standard-home-2048x1366-1.jpg"
+          />
+          <h3>O que iremos apresentar na Feira K 2022?</h3>
+          <p>
+            Agora no segundo semestre de 2022 teremos mais uma edição de uma das
+            maiores feiras do setor do plástico do mundo! A K Trade-Fair, ou
+            mais
+          </p>
+          <a href="#">VER ARTIGO</a>
+        </article>
+
+        <article>
+          <img
+            src="https://rullistandard.com.br/wp-content/uploads/2022/09/rulli-standard-leveza-mercado.jpg"
+          />
+
+          <h3>Leveza levada a sério</h3>
+          <p>
+            O mercado encontra o plástico contra a parede grossa. A redução do
+            volume de plásticos em embalagens anda na ordem do dia por
+            conveniência econômica, reverência
+          </p>
+          <a href="#">VER ARTIGO</a>
+        </article>
+
+        <article>
+          <img
+            src="https://rullistandard.com.br/wp-content/uploads/2022/09/rulli-standard-crise-hidrica.jpg"
+            alt="Imagem de uma balança"
+          />
+
+          <h3>Sempre vale a pena</h3>
+          <p>
+            Porque a crise hídrica justifica a compra de novas máquinas pelos
+            transformadores? A pane na energia elétrica e a euforia dos
+            fornecedores de máquinas com as vendas
+          </p>
+          <a href="#">VER ARTIGO</a>
+        </article>
+
+        <article>
+          <p>Nos acompanhe nas redes sociais</p>
+          <div class="redes-sociais">
+            <a href="#"
+              ><i class="fa-brands fa-instagram" aria-hidden="true"></i
+            ></a>
+            <a href="#"
+              ><i class="fa-brands fa-facebook" aria-hidden="true"></i
+            ></a>
+            <a href="#"
+              ><i class="fa-brands fa-youtube" aria-hidden="true"></i
+            ></a>
+            <a href="#"
+              ><i class="fa-brands fa-linkedin" aria-hidden="true"></i
+            ></a>
+            <a href="#"
+              ><i class="fa-brands fa-twitter" aria-hidden="true"></i
+            ></a>
+          </div>
+        </article>
+      </section>
     </main>
 
     <footer id="rodapesite">
@@ -213,8 +339,8 @@
             data-wow-delay="0.6s"
           >
             <h1>Lojas</h1>
-            <p>Av. Maria Leonor, 1229 - Centro, Diadema - SP - Brasil </p>
-            <p>CEP: 09920-080 </p>
+            <p>Av. Maria Leonor, 1229 - Centro, Diadema - SP - Brasil</p>
+            <p>CEP: 09920-080</p>
           </div>
           <div
             class="rodapecontato wow flipInX"
@@ -234,9 +360,9 @@
         </div>
       </div>
     </footer>
-      <!-- SCRIPTS -->
-      <script defer src="assets/js/app.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-      
+
+    <!-- Scripts -->
+    <script defer src="assets/js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
