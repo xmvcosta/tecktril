@@ -584,6 +584,11 @@ footer .container {
     gap: 20px;
     padding-block: 20px;
   }
+  
+  .container-extrusoras-aplicacoes article:hover {
+    background-color: #1100ff1f;
+    transition: all 0.3s ease-in-out;
+  }
 
   @media screen and (min-width: 1440px) {
     .banner {
