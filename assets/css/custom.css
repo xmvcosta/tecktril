@@ -704,6 +704,10 @@ footer .container {
     width: 270px;
   }
 
+  #ver-artigos {
+    grid-column: span 3; /* Faz o botão ocupar as 3 colunas */
+  }
+
   @media screen and (min-width: 1440px) {
     .banner {
       height: 500px;
