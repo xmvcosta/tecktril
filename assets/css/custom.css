@@ -8,13 +8,12 @@
 img {
   max-width: 100%;
   display: block;
-  margin: auto;
 }
 
 /* Classes Auxiliares */
 .container {
   margin: 0 auto;
-  width: 95%;
+  width: 90%;
 }
 
 /* Variáveis de Cor */
@@ -56,8 +55,7 @@ header {
   padding: 2px;
 }
 
-
-.nav-list li:nth-child(1) a {
+.header-index .nav-list li:nth-child(1) a {
   color: #ffc107;
 }
 
@@ -86,7 +84,6 @@ header {
   width: 100%;
 }
 
-
 /* Hamburger Menu */
 .hamburger {
   display: block; /* Certifique-se de que ele está visível */
@@ -113,14 +110,12 @@ header {
   z-index: 999; /* Garante que o menu fique sobre outros elementos */
 }
 
-
 .nav.active .nav-list {
   display: flex;
   height: 270px;
   background: rgb(255, 255, 255);
   width: 100%;
   box-shadow: 0px 2px 6px rgb(0 0 0);
-
 }
 
 /* Banner */
@@ -256,6 +251,11 @@ h1 {
 }
 
 /* Extrusoras & Aplicações */
+.extrusoras-aplicacoes {
+  width: 90%;
+  margin-inline: auto;
+}
+
 section h2 {
   text-align: center;
   font-size: 24px;
@@ -263,7 +263,7 @@ section h2 {
   margin: 30px 0;
 }
 
-section {
+.container-produtos {
   padding: 0 10px;
 }
 
@@ -299,6 +299,11 @@ article p {
 }
 
 /* Últimas Notícias */
+.container-noticias {
+  width: 90%;
+  margin-inline: auto;
+}
+
 section a {
   display: block;
   text-align: center;
@@ -319,7 +324,7 @@ section a:hover {
 
 section article img {
   width: 100%;
-  height: 120px;
+  height: auto;
   object-fit: cover;
   border-radius: 5px;
   margin-bottom: 10px;
@@ -332,7 +337,7 @@ section article h3 {
 }
 
 section article p {
-  font-size: 12px;
+  font-size: 14px;
   margin-bottom: 10px;
 }
 
@@ -350,7 +355,6 @@ section article a:hover {
 
 section div {
   text-align: center;
-  margin-top: 15px;
 }
 
 section div p {
@@ -369,11 +373,15 @@ section div a:hover {
   color: #0056b3;
 }
 
+#ver-artigos {
+  margin-block: 5px 30px;
+}
+
 /* Footer */
 footer {
   background-color: #003087;
   color: white;
-  padding: 30px 0;
+  padding-block: 0 30px;
 }
 
 footer .container {
@@ -411,8 +419,71 @@ footer .container {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+/* PÁGINA EMPRESA */
+
+/* Header */
+
+.header-empresa .nav-list li:nth-child(2) a {
+  color: #ffc107;
+}
+
+/* Conteúdo Main */
+.container-empresa {
+  width: 90%;
+  margin: 20px auto;
+}
+
+.container-empresa article {
+  gap: 0;
+}
+
+.container-empresa article h1,
+.container-empresa article h2 {
+  margin-block: 10px;
+}
+
+.container-feiras {
+  background-color: #003087;
+}
+.eventos {
+  width: 90%;
+  margin-inline: auto;
+}
+
+.container-feiras h1 {
+  color: white;
+  padding-top: 20px;
+}
+
+.container-feiras h2 {
+  background-color: white;
+  width: 100%;
+}
+
+.container-feiras p {
+  font-size: 14px;
+}
+
+.conferir-fotos {
+  padding-block: 40px;
+  background-color: white;
+}
+
+.conferir-fotos img {
+  margin-block: 25px;
+  width: 60%;
+}
+
+.conferir-fotos h2 {
+  margin-block: 0;
+}
+
+.btn-fotos {
+  margin-top: 10px;
+}
 /* Media Queries para telas maiores (acima de 320px) */
 @media (min-width: 768px) {
+  /* Header */
   .logo img {
     height: 50px;
   }
@@ -432,6 +503,7 @@ footer .container {
     display: none;
   }
 
+  /* Banner */
   .banner {
     height: 500px;
   }
@@ -494,7 +566,6 @@ footer .container {
 
   section {
     padding: 0;
-    width: 95%;
     margin: 0 auto;
   }
 
@@ -524,11 +595,11 @@ footer .container {
   }
 
   section article p {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   section article a {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   section div p {
@@ -564,6 +635,33 @@ footer .container {
     font-size: 14px;
     padding-top: 20px;
   }
+
+  /* Página Empresa */
+
+  .eventos {
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(150px, 1fr)
+    ); /* Reduz o tamanho mínimo */
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .eventos article {
+    width: 300px; /* Reduz a largura dos cards */
+  }
+
+  .eventos img {
+    width: 100%; /* Reduz a largura das imagens */
+    height: 100px; /* Diminui a altura */
+    object-fit: contain;
+  }
+
+  .eventos p {
+    font-size: 16px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -584,10 +682,27 @@ footer .container {
     gap: 20px;
     padding-block: 20px;
   }
-  
+
   .container-extrusoras-aplicacoes article:hover {
     background-color: #1100ff1f;
     transition: all 0.3s ease-in-out;
+  }
+
+  /* Página empresa */
+
+  .eventos article {
+    width: 400px;
+  }
+
+  .fotos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-block: 20px;
+  }
+
+  .fotos img {
+    width: 270px;
+    margin-inline: auto;
   }
 
   @media screen and (min-width: 1440px) {
@@ -602,6 +717,26 @@ footer .container {
     #container-produtos {
       grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     }
+
+    /* Página empresa */
+
+    section article p,
+    .eventos p {
+      font-size: 18px;
+    }
+
+    /* Página Empresa */
+
+    .container-empresa {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .container-empresa article:first-of-type {
+      grid-column: span 4; /* Faz "Quem Somos" ocupar toda a largura */
+
+    }
   }
 }
 
@@ -612,5 +747,4 @@ footer .container {
   #container-produtos {
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   }
-  
 }
