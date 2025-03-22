@@ -470,8 +470,8 @@ footer .container {
 }
 
 .conferir-fotos img {
-  margin-block: 25px;
   width: 60%;
+  margin: 20px auto;
 }
 
 .conferir-fotos h2 {
@@ -702,7 +702,6 @@ footer .container {
 
   .fotos img {
     width: 270px;
-    margin-inline: auto;
   }
 
   @media screen and (min-width: 1440px) {
