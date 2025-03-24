@@ -10,6 +10,11 @@ img {
   display: block;
 }
 
+main{
+  max-width: 90%;
+  margin: 0 auto;
+}
+
 /* Classes Auxiliares */
 .container {
   margin: 0 auto;
