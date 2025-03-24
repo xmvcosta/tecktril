@@ -2,6 +2,8 @@
 /******reset global******/
 *, *::after, *::before {box-sizing: border-box; margin: 0; outline:0; padding: 0;}
 
+
+/* TAGS SEMANTICAS */
 img {
   max-width: 100%;
   display: block;
@@ -9,16 +11,21 @@ img {
 
 body {
   font-family: Arial, sans-serif;
-  line-height: 1.6;
+  line-height: 1.5;
   color: #333;
-  background-color: #f0f0f0;
+  background-color: red;
 }
 
 h1 {
   text-align: center;
   font-size: 24px;
-  margin: 30px 0;
+  /* margin: 30px 0; */
   color: #003087;
+}
+
+p {
+  font-size: 14px;
+  margin-bottom: 10px;
 }
 
 /* Header e Navegação */
@@ -30,8 +37,9 @@ header {
 
 /* Main */
 main{
-  max-width: 90%;
-  margin: 0 auto;
+  background-color: #e0a800;
+  /* max-width: 90%; */
+  /* margin: 0 auto; */
 }
 
 /* Footer */
@@ -46,11 +54,11 @@ footer .container {
   text-align: center;
 }
 
-section article {
+section{
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  margin-bottom: 30px;
+  /* gap: 15px; */
+  /* margin-bottom: 30px; */
 }
 
 section h2 {
@@ -78,7 +86,7 @@ section a:hover {
   text-decoration: underline;
 }
 
-section article img {
+article img {
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -86,18 +94,13 @@ section article img {
   margin-bottom: 10px;
 }
 
-section article h3 {
+article h3 {
   font-size: 16px;
   color: #003087;
   margin-bottom: 10px;
 }
 
-section article p {
-  font-size: 14px;
-  margin-bottom: 10px;
-}
-
-section article a {
+article a {
   display: inline-block;
   color: #003087;
   font-weight: bold;
@@ -105,30 +108,9 @@ section article a {
   font-size: 14px;
 }
 
-section article a:hover {
+article a:hover {
   text-decoration: underline;
 }
-
-section div {
-  text-align: center;
-}
-
-section div p {
-  font-size: 14px;
-  margin-bottom: 10px;
-}
-
-section div a {
-  margin: 0 8px;
-  color: #003087;
-  font-size: 18px;
-  text-decoration: none;
-}
-
-section div a:hover {
-  color: #0056b3;
-}
-
 
 article {
   background: #fff;
@@ -136,6 +118,7 @@ article {
   border-radius: 8px;
   box-shadow: 0 2px 5px rgb(0 0 0 / 45%);
   text-align: center;
+  margin: 15px;
 }
 
 article i {
@@ -154,6 +137,17 @@ article p {
   font-size: 14px;
 }
 
+div a {
+  margin: 0 8px;
+  color: #003087;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+div a:hover {
+  color: #0056b3;
+}
+
 /* Variáveis de Cor */
 :root {
   --color-white: #fff;
@@ -166,16 +160,17 @@ article p {
   width: 90%;
 }
 
-.container h2 {
+/* .container h2 {
   font-size: 24px;
   margin-bottom: 15px;
-}
+} */
 
-.container p {
+/* .container p {
   font-size: 14px;
   margin-bottom: 20px;
-}
+} */
 
+/* NAV */
 .logo img {
   height: 40px;
 }
@@ -222,23 +217,6 @@ article p {
   width: 100%;
 }
 
-/* Hamburger Menu */
-.hamburger {
-  display: block; /* Certifique-se de que ele está visível */
-  background: none;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-  z-index: 100; /* Garante que o ícone fica por cima */
-  position: absolute;
-  right: 20px;
-  top: 17px;
-}
-
-.hamburger i {
-  color: white;
-}
-
 .nav-list {
   display: none;
   top: 65px;
@@ -256,11 +234,28 @@ article p {
   box-shadow: 0px 2px 6px rgb(0 0 0);
 }
 
-/* Banner */
+/* Hamburger Menu */
+.hamburger {
+  display: block; /* Certifique-se de que ele está visível */
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 100; /* Garante que o ícone fica por cima */
+  position: absolute;
+  right: 20px;
+  top: 17px;
+}
 
+.hamburger i {
+  color: white;
+}
+
+/* Banner */
 .banner {
-  background: url("../img/banner.jpg") no-repeat center center/cover;
-  padding-block: 50px;
+  /* background: url("../img/banner.jpg") no-repeat center center/cover; */
+  background-color: #000;
+  padding: 22px;
 }
 
 .contact-buttons {
