@@ -5,6 +5,12 @@
     height: 50px;
   }
 
+  .nav{
+    display: flex;
+    /* background-color: red; */
+    
+  }
+
   .nav-list {
     display: flex;
     flex-direction: row;

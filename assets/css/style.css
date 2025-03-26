@@ -2,17 +2,23 @@
 /******reset global******/
 *, *::after, *::before {box-sizing: border-box; margin: 0; outline:0; padding: 0;}
 
+/* Variáveis de Cor */
+:root {
+  --color-white: #fff;
+  --color-blue: #003087;
+}
+
 /* TAGS SEMANTICAS */
+body {
+  font-family: Arial, Verdana, Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: #000;
+  background-color: var(--color-blue);
+}
+
 img {
   max-width: 100%;
   display: block;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.5;
-  color: #000;
-  background-color: red;
 }
 
 h1 {
@@ -23,28 +29,117 @@ h1 {
 }
 
 p {
-  font-size: 14px;
+  font-size: 15px;
   margin-bottom: 10px;
 }
 
 /* Header e Navegação */
 header {
-  background-color: #003087;
-  padding: 15px 0;
+  /* padding: 15px 15px; */
+
   /* height: 5vh; */
   /* Removido position: sticky para que o header fique estático no topo */
 }
 
+/* NAV */
+.logo img {
+  height: 40px;
+  border-radius: 6px;
+}
+
+.nav {
+  /* position: relative; */
+  /* display: flex; */
+  justify-content: space-between;
+  align-items: center;
+  /* padding-inline: 5%; */
+}
+
+.nav-list a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 5px 0; /* Para dar um espaço para a linha */
+}
+
+.nav-list {
+  display: none;
+  top: 65px;
+  padding: 20px;
+  text-decoration: none;
+  list-style: none;
+  z-index: 999; /* Garante que o menu fique sobre outros elementos */
+}
+
+.nav-list li {
+  text-align: center;
+  background-color: #003087;
+  margin: 10px 0;
+  padding: 2px;
+}
+
+.header-index .nav-list li:nth-child(1) a {
+  color: #ffc107;
+}
+
+/* Animação nav */
+.nav-list a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ffc107; /* Cor do efeito */
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-list a:hover::after {
+  width: 100%;
+}
+
+
+.nav.active .nav-list {
+
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  /* height: 270px; */
+  background: rgb(255, 255, 255);
+  width: 100%;
+  box-shadow: 0px 2px 6px rgb(0 0 0);
+
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: block; /* Certifique-se de que ele está visível */
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 100; /* Garante que o ícone fica por cima */
+  position: absolute;
+  right: 20px;
+  top: 17px;
+}
+
+.hamburger i {
+  color: white;
+}
+
+
 /* Main */
 main{
-  background-color: #e0a800;
+  background-color: #f0f0f0;
   /* max-width: 90%; */
   /* margin: 0 auto; */
 }
 
 /* Footer */
 footer {
-  background-color: #003087;
   color: white;
   padding-block: 0 30px;
 }
@@ -66,7 +161,7 @@ section h2 {
   font-size: 24px;
   color: #003087;
   margin: 15px 0;
-  text-shadow: #fc0 1px 0 10px;
+  /* text-shadow: #fc0 1px 0 10px; */
 }
 
 section a {
@@ -145,112 +240,16 @@ div a {
   text-decoration: none;
 }
 
-div a:hover {
-  color: #0056b3;
-}
-
-/* Variáveis de Cor */
-:root {
-  --color-white: #fff;
-  --color-black: #000;
-}
-
 /* Classes Auxiliares */
 .container {
   margin: 0 auto;
   width: 90%;
 }
 
-/* .container h2 {
-  font-size: 24px;
-  margin-bottom: 15px;
-} */
-
-/* .container p {
-  font-size: 14px;
-  margin-bottom: 20px;
-} */
-
-/* NAV */
-.logo img {
-  height: 40px;
+div a:hover {
+  color: #0056b3;
 }
 
-.nav {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-inline: 5%;
-}
-
-.nav-list li {
-  background-color: #003087;
-  padding: 2px;
-}
-
-.header-index .nav-list li:nth-child(1) a {
-  color: #ffc107;
-}
-
-.nav-list a {
-  position: relative;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 14px;
-  padding: 5px 0; /* Para dar um espaço para a linha */
-}
-
-/* Animação nav */
-.nav-list a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 2px;
-  background-color: #ffc107; /* Cor do efeito */
-  transition: width 0.3s ease-in-out;
-}
-
-.nav-list a:hover::after {
-  width: 100%;
-}
-
-.nav-list {
-  display: none;
-  top: 65px;
-  padding: 20px;
-  text-decoration: none;
-  list-style: none;
-  z-index: 999; /* Garante que o menu fique sobre outros elementos */
-}
-
-.nav.active .nav-list {
-  display: flex;
-  height: 270px;
-  background: rgb(255, 255, 255);
-  width: 100%;
-  box-shadow: 0px 2px 6px rgb(0 0 0);
-}
-
-/* Hamburger Menu */
-.hamburger {
-  display: block; /* Certifique-se de que ele está visível */
-  background: none;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-  z-index: 100; /* Garante que o ícone fica por cima */
-  position: absolute;
-  right: 20px;
-  top: 17px;
-}
-
-.hamburger i {
-  color: white;
-}
 
 /* Banner */
 .banner {
@@ -328,7 +327,7 @@ div a:hover {
 }
 
 .produto-content p {
-  font-size: 14px;
+  /* font-size: 15px; */
   margin-bottom: 15px;
 }
 
@@ -398,7 +397,7 @@ div a:hover {
 #rodapeitens h1 {
   font-size: 20px;
   margin-bottom: 8px;
-  color: #25d366;
+  color: #ffc107;
 }
 
 #rodapeitens p,
