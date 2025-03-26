@@ -2,7 +2,6 @@
 /******reset global******/
 *, *::after, *::before {box-sizing: border-box; margin: 0; outline:0; padding: 0;}
 
-
 /* TAGS SEMANTICAS */
 img {
   max-width: 100%;
@@ -32,6 +31,7 @@ p {
 header {
   background-color: #003087;
   padding: 15px 0;
+  /* height: 5vh; */
   /* Removido position: sticky para que o header fique estático no topo */
 }
 
@@ -66,7 +66,7 @@ section h2 {
   font-size: 24px;
   color: #003087;
   margin: 15px 0;
-  text-shadow: 1px 1px 2px red;
+  text-shadow: #fc0 1px 0 10px;
 }
 
 section a {
@@ -378,13 +378,11 @@ div a:hover {
   padding: 0 10px;
 }
 
-
 /* Últimas Notícias */
 .container-noticias {
   width: 90%;
   margin-inline: auto;
 }
-
 
 #ver-artigos {
   margin-block: 5px 30px;
@@ -398,13 +396,14 @@ div a:hover {
 }
 
 #rodapeitens h1 {
-  font-size: 16px;
+  font-size: 20px;
   margin-bottom: 8px;
+  color: #25d366;
 }
 
 #rodapeitens p,
 #rodapeitens a {
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 5px;
   color: white;
   text-decoration: none;
@@ -422,9 +421,7 @@ div a:hover {
 }
 
 /* PÁGINA EMPRESA */
-
 /* Header */
-
 .header-empresa .nav-list li:nth-child(2) a {
   color: #ffc107;
 }
